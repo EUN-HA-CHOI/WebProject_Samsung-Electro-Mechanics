@@ -112,12 +112,8 @@ margin-left: 8px;background-image: url(../images/icon_btn_arrow_w.png);backgroun
 .newsroom_sec .news_list .txt_area{padding:20px 15px; box-sizing:border-box; word-wrap:break-word; word-break:keep-all;}
 .newsroom_sec .news_list .txt_area i{position:relative; padding-right:10px; font-size:16px; font-weight:600; font-style:normal; display:inline-block; margin-right:6px;}
 .newsroom_sec .news_list .txt_area i:after{content:''; display:block; width:2px; height:15px; background:#ccc; position:absolute; top:6px; right:0;}
-.newsroom_sec .news_list .txt_area i.company{color:#003399;}
-.newsroom_sec .news_list .txt_area i.product{color:#327f2e;}
-.newsroom_sec .news_list .txt_area i.careers{color:#3399ff;}
 .newsroom_sec .news_list .txt_area i.press{color:#f26522;}
 .newsroom_sec .news_list .txt_area i.tech{color:#6703c7;}
-.newsroom_sec .news_list .txt_area i.csr{color:#ad0057;}
 .newsroom_sec .news_list .txt_area .date{font-size:16px; color:#999;}
 .newsroom_sec .news_list .txt_area .tit{overflow:hidden; max-height:62px; font-size:23px; font-weight:600; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; word-break:break-word; line-height:1.3; color:#000; margin-top:10px;}
 
@@ -164,7 +160,7 @@ margin-left: 8px;background-image: url(../images/icon_btn_arrow_w.png);backgroun
 .product_sec .search_area{background-color:#fff; position:relative; width:640px; height:60px; margin:0 auto;}
 .product_sec .search_area .search_txt{padding:0 20px; box-sizing:border-box; width:calc(100% - 60px);  height:60px; border:none; font-size:18px;}
 .product_sec .search_area .search_txt::placeholder{font-size:18px; color:#aaa;}
-.product_sec .search_area .btn_search{text-indent:-9999px; font-size:0; position:absolute; top:0; right:0; width:60px; height:60px; background:url(../images/ico_search.png) no-repeat center;}
+.product_sec .search_area .btn_search{text-indent:-9999px; border: none; font-size:0; position:absolute; top:0; right:0; width:60px; height:60px; background:url(../images/ico_search.png) no-repeat center;}
 .product_sec .product_list{padding-top:50px; border-top:1px solid #e4e6ea; margin-top:50px;}
 .product_sec .shortcut_wrap{overflow:hidden;}
 .product_sec .shortcut_wrap .shortcut{display:block; float:left; position:relative; width:585px; height:124px; border-radius:0 20px 20px 20px; overflow:hidden; padding:38px 0 0 38px; box-sizing:border-box; background-color:#fff;}

@@ -225,17 +225,20 @@
   </div>
   <!--//wrap-->
   <script>
-    //fetch api ajax,ajax,async await
-    async function fetchHtmlAsText(url) {
-      const response = await fetch(url);
-      return await response.text();
-    }
-    async function inportPage(target) {
-      document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-    }
-    importPage('header');
-    importPage('footer');
-  </script>
+    //ajax의 최신 fetch api 사용해서
+  //html 문서 안에서 다른 html 문서 불러오기
+  //자바스크립트 비동기 방식으로 async await 
+  async function fetchHtmlAsText(url) {
+    const response = await fetch(url);
+    return await response.text();
+  }
+  async function importPage(target) {
+    document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+  }
+  importPage('header');
+  importPage('footer');
+
+</script>
 </body>
 
 </html>

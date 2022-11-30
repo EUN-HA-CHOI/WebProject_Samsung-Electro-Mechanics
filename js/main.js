@@ -1,10 +1,9 @@
 
 window.addEventListener('load', () => {
 
-
 /*주메뉴*/
 
-const gnbMenu = document.querySelectorAll ('.gnb>ul>li');
+const gnbMenu = document.querySelectorAll ('.gnb>ul>li'); //[li,li,li,li,li]
 const headerWrap = document.querySelector (".header_wrap");
 
 for(var i=0; i<gnbMenu.length; i++) {

@@ -44,6 +44,7 @@ const btnSrchClose = document.querySelector (".btn_srch_close")
     srchWrap.classList.remove('on');
   });
 
+
   /*오토베너*/
   const btnNext = document.querySelector('a.btn_next');
   const btnprev = document.querySelector('a.btn_prev');
@@ -174,4 +175,38 @@ function activation(index, list) {
       behavior: 'smooth'
     });
   })
+});
+
+// 화면 스크롤 시 이벤트
+const newsList = document.querySelector("#newsList");
+const newsletterBox = document.querySelector("#newsletter_box");
+const prhallSec = document.querySelector("#prhall_sec");
+const listArea1 = document.querySelector("#listarea1");
+const listArea2 = document.querySelector("#listarea2");
+const listArea3 = document.querySelector("#listarea3");
+ 
+
+window.addEventListener("scroll",(e)=>{
+  let scroll = document.querySelector("html").scrollTop;
+  // console.log(window.scrollX, window.scrollY);
+  console.log(scroll);
+  if(scroll > 270){
+    newsList.style.opacity = 1;
+  
+  } if(scroll > 740){
+    newsletterBox.style.opacity = 1;
+
+  } if(scroll > 1110){
+     prhallSec.style.opacity = 1;
+   
+  } if(scroll > 1930 ){
+    listArea1.style.opacity = 1;
+    
+  }  if(scroll > 2350){
+    listArea2.style.opacity = 1;
+    
+  } if(scroll > 2750){
+    listArea3.style.opacity = 1;
+  
+}
 });
